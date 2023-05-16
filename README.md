@@ -1,5 +1,6 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![](https://jitpack.io/v/vvsdevs/DynamicLayoutLoader.svg)](https://jitpack.io/#vvsdevs/DynamicLayoutLoader) 
+[![](https://jitpack.io/v/vvsdevs/AndroidDynamicLayoutLoader.svg)](https://jitpack.io/#vvsdevs/AndroidDynamicLayoutLoader)
+[![API](https://img.shields.io/badge/API-19%2B-orange.svg?style=flat)](https://android-arsenal.com/api?level=19)
  
 # DynamicLayoutLoader
 
@@ -14,11 +15,12 @@ Stay ahead of the curve with this groundbreaking Android library, enabling you t
 * Targeting specific devices by brand, model and Android API version
 * Layout changes based on configuration fields
 
-OUTPUT
+Some of Designs
+
 Results | Login Screen
 --- | ---
 ![LOGIN SCREEN](https://raw.githubusercontent.com/vvsdevs/AndroidDynamicLayoutLoader/master/DemoLayout/src/main/assets/results.jpg) | ![LOGIN SCREEN](https://raw.githubusercontent.com/vvsdevs/AndroidDynamicLayoutLoader/master/DemoLayout/src/main/assets/login_screen.jpg)
- 
+
 ## Installing
 
 1. Add repository in root ```build.gradle```
@@ -34,9 +36,7 @@ allprojects {
 2. Add the dependency
 
 ```gradle
-dependencies {
-    implementation 'com.github.vvsdevs:AndroidDynamicLayoutLoader:1.0.0'
-}
+    implementation 'com.github.vvsdevs:AndroidDynamicLayoutLoader:v1.0.0'
 ```
 
 3. Add below 2 permissions
@@ -94,10 +94,14 @@ dependencies {
 * layout = Wrapper layout that will contain loaded views
 
 ```java
-new LayoutUpdater("https://raw.githubusercontent.com/vvsdevs/Demo/master/app/src/main/assets",
-    "login_screen",
-    findViewById(R.id.mainLayout))
-    .initialize();
+        try {
+        new LayoutUpdater("https://raw.githubusercontent.com/vvsdevs/Demo/master/app/src/main/assets",
+        "login_screen",
+        findViewById(R.id.mainLayout))
+        .initialize();
+        } catch (DynamicException e) {
+        e.printStackTrace();
+        }
 ```
 
 ## Manual
