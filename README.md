@@ -1,6 +1,5 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![](https://jitpack.io/v/vvsdevs/DynamicLayoutLoader.svg)](https://jitpack.io/#vvsdevs/DynamicLayoutLoader)
-[![API](https://img.shields.io/badge/API-19%2B-orange.svg?style=flat)](https://android-arsenal.com/api?level=19)
+[![](https://jitpack.io/v/vvsdevs/DynamicLayoutLoader.svg)](https://jitpack.io/#vvsdevs/DynamicLayoutLoader) 
  
 # DynamicLayoutLoader
 
@@ -14,6 +13,10 @@ Stay ahead of the curve with this groundbreaking Android library, enabling you t
 
 * Targeting specific devices by brand, model and Android API version
 * Layout changes based on configuration fields
+
+OUTPUT
+--- | ---
+![LOGIN SCREEN](https://raw.githubusercontent.com/vvsdevs/AndroidDynamicLayoutLoader/master/DemoLayout/src/main/assets/login_screen.png)
 
 ## Installing
 
@@ -36,7 +39,6 @@ dependencies {
 ```
 
 3. Add below 2 permissions
-4. 
 ````
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -138,8 +140,8 @@ setOptions(NON_STOP) // use with setAsyncPause(long millis)
 One and only constructor
 
  * **Parameters:**
-   * `url` — URL of directory/folder where JSON layout file is located (for example, "https://dosti.tech/vvsdevs/")
-   * `name` — JSON layout file name with or without extension (for example, "activity_main") (* Don't add example. "activity_main.json")
+   * `url` — URL of directory/folder where JSON layout file is located (for example, "https://raw.githubusercontent.com/vvsdevs/Demo/master/app/src/main/assets/")
+   * `name` — JSON layout file name with or without extension (for example, "login_screen") (* Don't add example. "login_screen.json")
    * `layout` — wrapper layout that will contain inflated layout from JSON file (for example, findViewById(R.id.mainLayout))
  * **Exceptions:** `DynamicLayoutLoaderException` — if any of passed parameters is null
 
