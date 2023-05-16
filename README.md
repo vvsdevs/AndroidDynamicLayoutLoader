@@ -94,14 +94,15 @@ allprojects {
 * layout = Wrapper layout that will contain loaded views
 
 ```java
-        try {
-        new LayoutUpdater("https://raw.githubusercontent.com/vvsdevs/Demo/master/app/src/main/assets",
+   try {
+        new LayoutUpdater("https://raw.githubusercontent.com/vvsdevs/AndroidDynamicLayoutLoader/master/DemoLayout/src/main/assets/",
         "login_screen",
         findViewById(R.id.mainLayout))
         .initialize();
-        } catch (DynamicException e) {
+        } 
+        catch (DynamicException e) {
         e.printStackTrace();
-        }
+      }
 ```
 
 ## Manual
@@ -145,7 +146,7 @@ setOptions(NON_STOP) // use with setAsyncPause(long millis)
 One and only constructor
 
  * **Parameters:**
-   * `url` — URL of directory/folder where JSON layout file is located (for example, "https://raw.githubusercontent.com/vvsdevs/Demo/master/app/src/main/assets/")
+   * `url` — URL of directory/folder where JSON layout file is located (for example, "https://raw.githubusercontent.com/vvsdevs/AndroidDynamicLayoutLoader/master/DemoLayout/src/main/assets/")
    * `name` — JSON layout file name with or without extension (for example, "login_screen") (* Don't add example. "login_screen.json")
    * `layout` — wrapper layout that will contain inflated layout from JSON file (for example, findViewById(R.id.mainLayout))
  * **Exceptions:** `DynamicLayoutLoaderException` — if any of passed parameters is null
