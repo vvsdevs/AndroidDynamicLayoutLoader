@@ -15,9 +15,10 @@ Stay ahead of the curve with this groundbreaking Android library, enabling you t
 * Layout changes based on configuration fields
 
 OUTPUT
+Date Picker | Time Picker
 --- | ---
-![LOGIN SCREEN](https://raw.githubusercontent.com/vvsdevs/AndroidDynamicLayoutLoader/master/DemoLayout/src/main/assets/login_screen.jpg)
-
+![LOGIN SCREEN](https://raw.githubusercontent.com/vvsdevs/AndroidDynamicLayoutLoader/master/DemoLayout/src/main/assets/login_screen.jpg) | ![LOGIN SCREEN](https://raw.githubusercontent.com/vvsdevs/AndroidDynamicLayoutLoader/master/DemoLayout/src/main/assets/login_screen.jpg)
+ 
 ## Installing
 
 1. Add repository in root ```build.gradle```
