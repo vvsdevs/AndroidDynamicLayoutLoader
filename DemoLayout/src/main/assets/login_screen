@@ -1,0 +1,79 @@
+{
+  "class": "android.widget.LinearLayout",
+  "attributes": {
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "orientation": "vertical",
+    "background": "#FFFFFF"
+  },
+  "views": [
+    {
+      "class": "android.widget.Button",
+      "attributes": {
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "text": "Click Me"
+      }
+    },
+    {
+      "class": "android.widget.TextView",
+      "attributes": {
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "text": "Hello, Dynamico!"
+      }
+    }
+  ]
+}
+{
+  "class": "android.widget.RelativeLayout",
+  "attributes": {
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "padding": "16dp"
+  },
+  "views": [
+    {
+      "class": "android.widget.ImageView",
+      "attributes": {
+        "layout_width": "100dp",
+        "layout_height": "100dp",
+        "src": "@drawable/ic_launcher_background",
+        "layout_centerHorizontal": "true",
+        "layout_marginBottom": "32dp"
+      }
+    },
+    {
+      "class": "android.widget.EditText",
+      "attributes": {
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "hint": "Email",
+        "inputType": "textEmailAddress",
+        "layout_below": "@id/imageView_logo",
+        "layout_marginTop": "32dp"
+      }
+    },
+    {
+      "class": "android.widget.EditText",
+      "attributes": {
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "hint": "Password",
+        "inputType": "textPassword",
+        "layout_below": "@id/editText_email",
+        "layout_marginTop": "16dp"
+      }
+    },
+    {
+      "class": "android.widget.Button",
+      "attributes": {
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "text": "Login",
+        "layout_below": "@id/editText_password",
+        "layout_marginTop": "32dp"
+      }
+    }
+  ]
+}
